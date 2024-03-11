@@ -77,7 +77,7 @@ def procesar_texto():
         
         texto_recibido = request.json['texto']
         print('Texto recibido:', texto_recibido)  
-        topic_percentages = get_normalized_topics_from_pdf(texto)
+        topic_percentages = get_normalized_topics_from_pdf(texto_recibido)
         return jsonify({'texto_procesado',topic_percentages})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
