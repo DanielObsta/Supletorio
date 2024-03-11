@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "OpenIA",
+    "slug": "OpenIA",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo3.png",
+    "plugins":[
+      "@config-plugins/react-native-blob-util",
+      "@config-plugins/react-native-pdf"
+    ],
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo3.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
